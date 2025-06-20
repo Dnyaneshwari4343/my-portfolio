@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2em;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 1.8em;
+      border-left: 5px solid #555;
+      padding-left: 10px;
+    }
+
+    .project, .service {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    .service img {
+      width: 40px;
+      height: 40px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    .service h3 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.2em;
+    }
+
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background-color: #222;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #222;
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      input, textarea, button {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <p>Web Developer | Data Scientist | AI Enthusiast</p>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About Me</a>
+      <a href="#contact">Contact Me</a>
+    </nav>
+  </header>
+
+  <section id="services">
+    <h2>Services</h2>
+    <div class="service">
+      <h3><img src="https://img.icons8.com/ios-filled/50/code.png" alt="Web Dev Icon"> Full Stack Web Development</h3>
+      <p>Designing and developing responsive websites and web apps using modern technologies like HTML, CSS, JavaScript, and backend frameworks.</p>
+    </div>
+    <div class="service">
+      <h3><img src="https://img.icons8.com/ios-filled/50/combo-chart.png" alt="Data Science Icon"> Data Science</h3>
+      <p>Data analysis, visualization, and machine learning solutions using Python, pandas, and Jupyter Notebooks.</p>
+    </div>
+    <div class="service">
+      <h3><img src="https://img.icons8.com/ios-filled/50/artificial-intelligence.png" alt="AI Icon"> AI Solutions</h3>
+      <p>Developing AI models for NLP, computer vision, and recommendation systems.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Some of My Recent Work</h2>
+    <div class="project">
+      <h3>Smart Skin Analysis Website</h3>
+      <p>A skincare platform that detects skin issues and provides solutions using AI and interactive forms.</p>
+    </div>
+    <div class="project">
+      <h3>HR Insights Dashboard</h3>
+      <p>Data dashboard that analyzes employee satisfaction and provides actionable insights to HR teams.</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate Web Developer and Data Scientist with a love for AI and innovation. With experience in full stack development and machine learning, I aim to create solutions that make an impact.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <label for="name">Your Name</label><br>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email">Your Email</label><br>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="message">Your Message</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
